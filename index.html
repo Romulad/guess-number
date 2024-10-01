@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Romuald Oluwatobi">
+    <link rel="stylesheet" href="style.css">
+    <title>Guessing number game</title>
+</head>
+
+<body>
+    <div class="h-screen overflow-hidden flex justify-center items-center text-center"
+    id="start-screen">
+        <div class="text-center">
+            <h1 class="my-10">Guessing Game!</h1>
+            <button class="py-2 px-8 bg-orange radius-lg text-white mb-4 hover>bg-orange-light"
+            id="start-screen-btn">
+                Start a new game
+            </button>
+        </div>
+    </div>
+
+    <div class="hidden text-center" id="game-container">
+        <div class="mb-5">
+            <p id="message" class="font-medium text-info">
+            </p>
+        </div>
+
+        <p class="text-center fs-18 mb-5">
+            Guess a number between 1 - 100:
+        </p>
+
+        <div class="flex gap-3 items-start justify-center flex-wrap">
+            <div>
+                <input type="number" name="number" id="number"
+                class="bg-white radius-lg p-3 border ">
+                <p id="input-error" class="text-red hidden"></p>
+            </div>
+            <button class="text-white p-3 radius-lg bg-orange hover>bg-orange-light
+            focus>border-2"
+            id="valid-btn">
+                Guess
+            </button>
+        </div>
+    </div>
+
+    <div class="fs-24 text-center hidden" id="success-message">
+        ✅ You get it right! Congrat
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
